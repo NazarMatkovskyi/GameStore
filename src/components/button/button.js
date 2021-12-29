@@ -12,9 +12,9 @@ export const Button = ({
       'btn': true,
       'btn--secondary': type === 'secondary',
       'btn--primary': type === 'primary',
-      'btn--small': type === 'small',
-      'btn--medium': type === 'medium',
-   })
+      'btn--small': size === 's',
+      'btn--medium': size === 'm',
+   });
    return (
       <button className={btnClass} onClick={onClick}>
          {children}
